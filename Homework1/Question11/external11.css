@@ -1,0 +1,64 @@
+header{
+    font-size: xx-large;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+}
+
+th {
+    font-size: large;
+}
+
+td {
+    font-size: medium;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img{
+   position: absolute;
+    top: 210px;
+    left: 550px;
+}
+
+/* Each set has the same size and has four links.  */
+table {
+    height: 100px;
+    width: 200px;
+}
+
+/* The four sets are located above, right, below, and left of the image. */
+.set1 {
+    position: relative;
+    top: 10px;
+    left: 550px;
+}
+
+.set2 {
+    position: relative;
+    top: 100px;
+    left: 300px
+}
+
+.set3{
+    position: relative;
+    left: 800px;
+}
+
+.set4 {
+    position: relative;
+    top: 100px;
+    left: 570px;
+}
+
+#quote {
+    /* Use fixed positioning to position the quote */
+    position: fixed;
+    top: 20px;
+    left: 40px;
+}

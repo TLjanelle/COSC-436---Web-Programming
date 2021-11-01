@@ -1,0 +1,45 @@
+header {
+    text-align: center;
+    font-size: xx-large;
+    background-color: darkblue;
+    color: silver;
+}
+
+body {
+    background-color: silver;
+}
+
+P {
+    font-size: large;
+}
+
+div {
+    /* The container is centered in the page. */
+    text-align: center;
+    /* It has a small margin, a background color, and a border. */
+    margin: 5px;
+    background-color: cornflowerblue;
+}
+
+img {
+    /* Use the same size images for all laptops. */
+    width: 200px;
+    height: 150px;
+    /* In each section, the image floats to the left and the paragraph flows around the image to the right. */
+    float: left;
+
+    /* Use appropriatepadding/margin for the image. */
+    padding: 10px;
+    margin: 10px;
+
+    /* A normal image is half opaque.  */
+    opacity: 50%;
+}
+
+img:hover {
+    /* When the mouse hovers over a half opaque image it transitions to a completely opaque image.*/
+    opacity: 100%;
+
+    /* The transition takes two seconds. */
+    transition: 2s;
+}

@@ -1,0 +1,126 @@
+<!-- Create a web page that aids a student in a job search by listing companies. 
+    - The page has an appropriate heading centered at the top. 
+    - There are many categories of companies such as Tech companies, Financial companies, and Industrial companies. Each category has many companies. For example, Tech category has Intel, Microsoft, and Google. 
+    - The page should have at least five categories and each category should have at least five companies. 
+    - The page contains an unordered li of categories. 
+    - Each category contains an ordered li of company names. 
+    - The company names are links to the companies. 
+    - Use a larger font size and a different font style than the standard ones for the entire page. 
+    - Use bold font for category names. Use a background color for the page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Job Search </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        header {
+            text-align: center;
+            font-size: xx-large;
+            font-style: italic;
+        }
+
+        body {
+            font-size: large;
+            font-style: italic;
+            background-color: cadetblue;
+        }
+        
+        h2 {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Student Job Search
+    </header>
+
+    <main>
+        <!-- Create an unordered list -->
+        <ul>
+            <li>
+                <!-- Group each industry in its own section -->
+                <section>
+                    <h2>Tech Companies</h2>
+                    <!-- Create an ordered list -->
+                    <ol>
+                        <li><a href="https://careers.google.com/?src=Online%2FHouse%20Ads%2FBKWS">Google</a></li>
+                        <li><a href="https://careers.microsoft.com/us/en/">Microsoft</a></li>
+                        <li><a href="https://www.ibm.com/us-en/employment/">IBM</a></li>
+                        <li><a href="https://www.nvidia.com/en-us/about-nvidia/careers/">NVIDIA</a></li>
+                        <li><a href="https://www.apple.com/careers/us/">Apple</a></li>
+                    </ol>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <h2>Financial Companies</h2>
+                    <!-- Create an ordered list -->
+                    <ol>
+                        <li><a href="https://www.bhhc.com/careers.aspx">Berkshire Hathaway</a></li>
+                        <li><a href="https://careers.jpmorgan.com/global/en/home">JPMorgan Chase</a></li>
+                        <li><a href="https://www.fanniemae.com/careers/search-all-jobs">Fannie Mae</a></li>
+                        <li><a href="https://careers.bankofamerica.com/en-us">Bank of America</a></li>
+                        <li><a href="https://www.wellsfargo.com/about/careers/">Wells Fargo</a></li>
+                    </ol>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <h2>Industrial Companies</h2>
+                    <!-- Create an ordered list -->
+                    <ol>
+                        <li><a href="https://www.rockwellautomation.com/en-us/company/careers.html">Rockwell
+                                Automation</a>
+                        </li>
+                        <li><a href="https://www.corning.com/worldwide/en/careers.html">Corning</a></li>
+                        <li><a href="https://parkercareers.ttcportals.com/jobs/search">Parker Hannifin</a></li>
+                        <li><a href="https://www.whirlpoolcareers.com/">Whirlpool</a></li>
+                        <li><a href="https://www.cummins.com/careers">Cummins</a></li>
+                    </ol>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <h2>Healthcare Industry</h2>
+                    <!-- Create an ordered list-->
+                    <ol>
+                        <li> <a href="https://jobs.cvshealth.com/">CVS Health</a></li>
+                        <li><a href="https://careers.unitedhealthgroup.com/">United Health Group</a></li>
+                        <li><a href="https://www.mckesson.com/Careers/">McKesson Corp</a></li>
+                        <li><a href="https://jobs.cigna.com/us/en/">Cigna</a></li>
+                        <li><a href="https://www.cardinalhealth.com/en/careers.html">Cardinal Health</a></li>
+                    </ol>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <h2>Aerospace Industry</h2>
+                    <!-- Create and ordered list-->
+                    <ol>
+                        <li> <a
+                                href="https://jobs.boeing.com/location/united-states-jobs/185/6252001/2?gclid=CjwKCAjw2P-KBhByEiwADBYWCkvGktHBFuADjdX0YdbJQw87pTaFpuuLWXgdRn5x-b_lpX5QbhZPZxoCOt0QAvD_BwE">Boeing</a>
+                        </li>
+                        <li><a href="https://www.airbus.com/careers.html">Airbus</a></li>
+                        <li><a href="https://www.lockheedmartinjobs.com/">Lockheed Martin</a></li>
+                        <li><a href="https://www.northropgrumman.com/careers/">Northrop Grunman</a></li>
+                        <li><a
+                                href="https://www.rtx.com/careers/overview?gclid=CjwKCAjw2P-KBhByEiwADBYWCnUWVZT7U3HEkhXBtCETWCCN7Q9NwUJwk5yXl3SXiJkpiopGy44rxRoCfpsQAvD_BwE">Raytheon</a>
+                        </li>
+                    </ol>
+                </section>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>

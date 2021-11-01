@@ -1,0 +1,114 @@
+/* Style the body for each page */
+
+body {
+    background-color: black;
+}
+
+
+/* Style the header for the navigation panel for each page */
+
+div.header {
+    text-align: center;
+    font-size: x-large;
+    height: 75px;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header ul {
+    background-color: black;
+    position: fixed;
+    top: 0px;
+}
+
+.header li {
+    float: left;
+}
+
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+.header li a:hover {
+    background-color: gray;
+}
+
+
+/* Style the body the home page */
+
+body.home {
+    background-image: url("home-background.jpg");
+    background-size: cover;
+}
+
+div.welcome {
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: large;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+    left: 450px;
+    top: 100px;
+}
+
+
+/* Style the body the menu page */
+
+body.menu {
+    text-align: center;
+}
+
+div.items ul {
+    list-style-type: none;
+    background-color: antiquewhite;
+}
+
+div.items p {
+    height: 100px;
+    font-size: large;
+}
+
+div.price-item table {
+    background-color: antiquewhite;
+}
+
+div.price-item th,
+td {
+    padding: 16px;
+}
+
+div.contact-item {
+    text-align: center;
+    font-size: large;
+    background-color: antiquewhite;
+    margin: 50px;
+    padding: 100px;
+    width: fit-content;
+    position: relative;
+    left: 400px;
+}
+
+img {
+    height: 200px;
+    width: 250px;
+}
+
+table {
+    font-size: x-large;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 10px;
+    position: relative;
+    left: 450px;
+    top: 100px;
+}

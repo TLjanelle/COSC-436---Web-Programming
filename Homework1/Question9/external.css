@@ -1,0 +1,62 @@
+header {
+    text-align: center;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+/* The page has a background image.  */
+body {
+    background-image: url("background-image.jpg");
+    background-size: cover;
+
+    /* The font size and family are specified. */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+        
+table {
+    /* Use a font size larger than the standard one for the entire table.  */
+    font-size: larger;
+    width: 75%;
+    height: 50%;
+    /* The text is appropriately aligned in the data and headings */
+    text-align: center;
+    /* The table is centered and the width/height are specified.*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    /* The table has a background color */
+    background-color: forestgreen;
+}
+
+/* Use a background color for headings */
+th {
+    background-color:whitesmoke;
+    text-align: center;
+}
+
+/* The data and headings have borders and padding. */
+th, td{
+    border-style: solid;
+    padding: 20px;
+}   
+
+/* Use alternating background colors for rows */
+tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+        
+/* The background color of rows change when the mouse hovers. */
+tr:hover {
+    background-color: darkgreen;
+}
+
+a {
+    /*The links have no underlines and have the same text color at all times*/
+    text-decoration: none;
+    color: black;
+}

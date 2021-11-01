@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Job Search </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        header {
+            text-align: center;
+            font-size: xx-large;
+            font-style: italic;
+        }
+
+        /* The page has a background color. */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            background-color: cadetblue;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        /* The entire list is centered and the width/height are specified. It has a background color and a border. Neither list have any markers. */
+        ul.categories {
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+            background-color: wheat;
+            border: 30px;
+            list-style-type: none;
+            font-size: large;
+        }
+
+        /* Neither list have any markers. The company links change their background colors and increase their font sizes when the mouse hovers. */
+        ul.companies {
+            list-style-type: none;
+            font-size: medium;
+        }
+        
+        /* Use appropriate margins and paddings to obtain a clean look.  */
+        section {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* Each category has its own background color. */
+        #techCompanies {
+            background-color: aliceblue;
+        }
+
+        #financial {
+            background-color: lightgreen;
+        }
+
+        #industrial {
+            background-color: lightpink;
+        }
+
+        #healthcare {
+            background-color: lightskyblue;
+        }
+
+        #aerospace{
+            background-color: lightslategrey;
+        }
+
+        /* The company links change their background colors and increase their font sizes when the mouse hovers */
+        a:hover {
+            background-color: lightcoral;
+            font-size: x-large;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Student Job Search
+    </header>
+
+    <main>
+        <!-- Create an unordered list -->
+        <ul class="categories">
+            <li>
+                <!-- Group each industry in its own section -->
+                <section>
+                    <div id="techCompanies">
+                        <h2>Tech Companies</h2>
+                        <!-- Create an ordered list -->
+                        <ul class="companies">
+                            <li><a href="https://careers.google.com/?src=Online%2FHouse%20Ads%2FBKWS">Google</a></li>
+                            <li><a href="https://careers.microsoft.com/us/en/">Microsoft</a></li>
+                            <li><a href="https://www.ibm.com/us-en/employment/">IBM</a></li>
+                            <li><a href="https://www.nvidia.com/en-us/about-nvidia/careers/">NVIDIA</a></li>
+                            <li><a href="https://www.apple.com/careers/us/">Apple</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <div id="financial">
+                        <h2>Financial Companies</h2>
+                        <!-- Create an ordered list -->
+                        <ul class="companies"> 
+                            <li><a href="https://www.bhhc.com/careers.aspx">Berkshire Hathaway</a></li>
+                            <li><a href="https://careers.jpmorgan.com/global/en/home">JPMorgan Chase</a></li>
+                            <li><a href="https://www.fanniemae.com/careers/search-all-jobs">Fannie Mae</a></li>
+                            <li><a href="https://careers.bankofamerica.com/en-us">Bank of America</a></li>
+                            <li><a href="https://www.wellsfargo.com/about/careers/">Wells Fargo</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <div id="industrial">
+                        <h2>Industrial Companies</h2>
+                        <!-- Create an ordered list -->
+                        <ul class="companies">
+                            <li><a href="https://www.rockwellautomation.com/en-us/company/careers.html">Rockwell
+                                    Automation</a>
+                            </li>
+                            <li><a href="https://www.corning.com/worldwide/en/careers.html">Corning</a></li>
+                            <li><a href="https://parkercareers.ttcportals.com/jobs/search">Parker Hannifin</a></li>
+                            <li><a href="https://www.whirlpoolcareers.com/">Whirlpool</a></li>
+                            <li><a href="https://www.cummins.com/careers">Cummins</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <div id="healthcare">
+                        <h2>Healthcare Industry</h2>
+                        <!-- Create an ordered list-->
+                        <ul class="companies">
+                            <li> <a href="https://jobs.cvshealth.com/">CVS Health</a></li>
+                            <li><a href="https://careers.unitedhealthgroup.com/">United Health Group</a></li>
+                            <li><a href="https://www.mckesson.com/Careers/">McKesson Corp</a></li>
+                            <li><a href="https://jobs.cigna.com/us/en/">Cigna</a></li>
+                            <li><a href="https://www.cardinalhealth.com/en/careers.html">Cardinal Health</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+
+            <li>
+                <section>
+                    <div id="aerospace">
+                        <h2>Aerospace Industry</h2>
+                        <!-- Create and ordered list-->
+                        <ul class="companies">
+                            <li> <a
+                                    href="https://jobs.boeing.com/location/united-states-jobs/185/6252001/2?gclid=CjwKCAjw2P-KBhByEiwADBYWCkvGktHBFuADjdX0YdbJQw87pTaFpuuLWXgdRn5x-b_lpX5QbhZPZxoCOt0QAvD_BwE">Boeing</a>
+                            </li>
+                            <li><a href="https://www.airbus.com/careers.html">Airbus</a></li>
+                            <li><a href="https://www.lockheedmartinjobs.com/">Lockheed Martin</a></li>
+                            <li><a href="https://www.northropgrumman.com/careers/">Northrop Grunman</a></li>
+                            <li><a
+                                    href="https://www.rtx.com/careers/overview?gclid=CjwKCAjw2P-KBhByEiwADBYWCnUWVZT7U3HEkhXBtCETWCCN7Q9NwUJwk5yXl3SXiJkpiopGy44rxRoCfpsQAvD_BwE">Raytheon</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
