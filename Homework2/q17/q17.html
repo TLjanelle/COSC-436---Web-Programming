@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The page has an appropriate title. -->
+    <title> Create ID & Password </title>
+    <link rel="stylesheet" href="q17.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        function createIdPassword() {
+            var last = document.getElementById("lastName").value;
+            var first = document.getElementById("firstName").value;
+            var phoneNo = document.getElementById("phone").value;
+
+            const lastArgs = Array.from(last);
+            const firstArgs = Array.from(first);
+            const phoneArgs = Array.from(phoneNo);
+
+            var person = new Object();
+
+            // The id is the first letter of the first name followed by the last name.
+            person.id = (firstArgs[0] + last).toUpperCase();
+
+            // The password is the last letter of the first name followed by the first three letters of the last name followed by the last four digits of the phone number.
+            person.password = (firstArgs[firstArgs.length - 1] + // Last Letter of First Name
+                lastArgs[0] + // First three of last name
+                lastArgs[1] +
+                lastArgs[2] +
+                phoneArgs[phoneArgs.length - 4] + // Last four digits of the phone number
+                phoneArgs[phoneArgs.length - 3] +
+                phoneArgs[phoneArgs.length - 2] +
+                phoneArgs[phoneArgs.length - 1]).toUpperCase(); // Both id and password are all upper case.
+
+            document.getElementById("outputId").innerHTML = "ID: " + person.id + "<br>Password: " + person.password;
+        }
+
+        function errorCheck() {
+            var lastName = document.getElementById("lastName").value;
+            var firstName = document.getElementById("firstName").value;
+            var phone = document.getElementById("phone").value;
+
+            var lastNameError = document.getElementById("lastNameError");
+            var firstNameError = document.getElementById("firstNameError");
+            var phoneError = document.getElementById("phoneError");
+
+            // If an input has an error, an error message is shown on the right in red color.
+            lastNameError.style.color = "red"
+            firstNameError.style.color = "red"
+            phoneError.style.color = "red"
+
+            var valid = true;
+
+            // The three inputs are checked for errors when the button is clicked.
+
+            // Limit the number of characters in each name to 10.
+            // The last and first names are of length at least two.
+            if (lastName.length < 2) {
+                lastNameError = "The last name must be more than 2 characters.";
+                document.getElementById("lastNameError").innerHTML = lastNameError;
+                valid = false;
+            }
+
+
+            if (lastName.length > 10) {
+                lastNameError = "The last name must be 10 characters or less.";
+                document.getElementById("lastNameError").innerHTML = lastNameError;
+                valid = false;
+            }
+
+            if (firstName.length < 2) {
+                firstNameError = "The first name must be more than 2 characters.";
+                document.getElementById("firstNameError").innerHTML = firstNameError;
+                valid = false;
+            }
+
+            if (firstName.length > 10) {
+                firstNameError = "The first name must be 10 characters or less.";
+                document.getElementById("firstNameError").innerHTML = firstNameError;
+                valid = false;
+            }
+
+
+            // The phone number format is xxx-xxx-xxxx.
+            if (!phone.search(/\d{3}-\d{3}-\d{4}/) == 0) {
+                phoneError = "Please enter number as 123-456-7890";
+                document.getElementById("phoneError").innerHTML = phoneError;
+                valid = false;
+            }
+
+            // If there is an error then the id and password are not displayed.
+            if (valid == true)
+                createIdPassword();
+
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        ID and Password Generator
+    </header>
+    <main>
+        <!-- There are three text boxes for the inputs. -->
+        <table>
+            <!-- The inputs are last name, first name, and phone number. -->
+            <tr>
+                <!-- The boxes have place holders instead of labels. -->
+                <td>
+                    <input type="text" id="lastName" placeholder="Last Name">
+                </td>
+                <td>
+                    <p id="lastNameError"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="firstName" placeholder="First Name">
+                </td>
+                <td>
+                    <p id="firstNameError"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                </td>
+                <td>
+                    <p id="phoneError"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- There is a button below the boxes to calculate the id and password. -->
+                    <button onclick="errorCheck()"> Create ID & Password</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- The id and password are displayed below the button. -->
+                    <p id="outputId"></p>
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+// ===============Question 1===============
+
+
+// ===============Question 2===============
+
+$taxAmount = tax(49999, "single");
+echo "$taxAmount \r\n";
+
+$taxAmount = tax(49999, "SINGLE");
+echo "$taxAmount \r\n";
+
+$taxAmount = tax(49999, "Single");
+echo "$taxAmount \r\n";
+
+$taxAmount = tax(49999, "married");
+echo "$taxAmount \r\n";
+
+$taxAmount = tax(49999, "MARRIED");
+echo "$taxAmount \r\n";
+
+$taxAmount = tax(49999, "Married");
+echo "$taxAmount \r\n";
+
+// ===============Question 3===============
+
+// ===============Question 4===============
+
+$amount = compoundInterest(10,5,7);
+echo "$amount";
+
+// ===============Question 5===============
+// ===============Question 6===============
+
+$result = removeDuplicates(["tree", "cat", "box", "cat", "dog", "tree", "tree"]);
+foreach ($result as $i) {
+    echo $i, ' ';
+}
+
+// ===============Question 7===============
+
+
+// ===============Question 8===============
+
+echo phone("734-242-5632") ? "True" : "False";
+echo "\n";
+echo university("E-062s-9ru0") ? "True" : "False";

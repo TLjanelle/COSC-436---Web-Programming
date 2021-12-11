@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The page has an appropriate title. -->
+    <title> Compound Interest </title>
+    <link rel="stylesheet" href="q10.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>Compound Interest Calculator</header><br><br>
+    <main>
+        <!-- There is a form to gather inputs from the user. 
+            Use the get method to send the data to the server. -->
+        <form method="get" action="q10.php">
+            <!-- The text boxes and labels are part of the form. -->
+            <label for="principal">Principal Amount: </label><br>
+            <input type="text" id="principal" name="principal" placeholder="Principal"><br><br>
+
+            <label for="interest">Interest Rate: </label><br>
+            <input type="text" id="rate" name="rate" placeholder="Rate"><br><br>
+
+            <label for="years">Number of Years:</label><br>
+            <input type="text" id="years" name="years" placeholder="Years"><br><br>
+
+            <!-- The form has submit and reset buttons. -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> University Cost </title>
+    <style>
+        fieldset {
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            padding: 0.625em;
+        }
+        
+        label {
+            width: 150px;
+            display: inline-block;
+            padding: 3px 6px;
+            text-align: right;
+            vertical-align: top;
+        }
+        
+        input {
+            font-size: inherit;
+        }
+    </style>
+</head>
+
+<body style="text-align:center">
+    <h1> University Cost </h1>
+    <form action="university.php" method="post">
+        <input type="text" name="credits" id="credits" placeholder="Total Credits"></input>
+        <br>
+        <input type="radio" id="under" name="status" value="undergraduate"> undergraduate </input>
+        <input type="radio" id="grad" name="status" value="graduate"> graduate </input>
+        <br>
+        <input type="radio" id="inside" name="state" value="in"> in state </input>
+        <input type="radio" id="out" name="state" value="out"> out of state </input>
+        <br>
+        <input type="checkbox" name="dorm" id="dorm"> Dorm </input>
+        <input type="checkbox" name="dine" id="dine"> Dining </input>
+        <input type="checkbox" name="park" id="park"> Parking </input>
+        <br><br>
+        <button type="submit"> Calculate Total Cost </button>
+        <button type="reset"> Reset </button>
+    </form>
+</body>
+
+</html>

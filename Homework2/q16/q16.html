@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The page has an appropriate title. -->
+    <title> Cost of Attendance </title>
+    <link rel="stylesheet" href="q16.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function cost() {
+            var credits = document.getElementById("credits").value;
+            var undergraduate = document.getElementById("undergraduate");
+            var graduate = document.getElementById("graduate");
+            var inState = document.getElementById("inState");
+            var outState = document.getElementById("outState");
+            var dorm = document.getElementById("dorm");
+            var dining = document.getElementById("dining");
+            var parking = document.getElementById("parking");
+            var totalCost;
+
+            // The in state tuition is $200 for undergraduates and $300 for graduates.
+            if (inState.checked) {
+                if (undergraduate.checked)
+                    totalCost = 200 * credits;
+                else if (graduate.checked)
+                    totalCost = 300 * credits;
+            }
+            // The out of state tuition is twice the in state tuition.
+            else if (outState.checked) {
+                if (undergraduate.checked)
+                    totalCost = 2 * 200 * credits;
+                else if (graduate.checked)
+                    totalCost = 2 * 300 * credits;
+            }
+            // The dorm, dining, and parking have fixed costs of $1000, $500, and $200 respectively.
+            if (dorm.checked)
+                totalCost = totalCost + 1000
+            if (dining.checked)
+                totalCost = totalCost + 500
+            if (parking.checked)
+                totalCost = totalCost + 200
+
+            document.getElementById("outputId").innerHTML = "Cost is " + totalCost;
+        }
+    </script>
+</head>
+
+<body>
+    <header>Cost of Attendance</header>
+    <main>
+        <table>
+            <tr>
+                <!-- The number of credits is entered in a text box. -->
+                <td>Number of Credits: </td>
+                <td><input type="number" id="credits" placeholder="Number of Credits" style="position: fixed;"></input>
+                </td>
+            </tr>
+            <tr>
+                <!-- The undergraduate/graduate status is chosen from radio buttons -->
+                <td>Undergraduate/Graduate Status: </td>
+                <td><input type="radio" id="undergraduate" name="studentGroup">Undergraduate</input>
+                </td>
+                <td><input type="radio" id="graduate" name="studentGroup">Graduate</input>
+                </td>
+            </tr>
+            <tr>
+                <!-- The in state/out of state status is also chosen from radio buttons. -->
+                <td> In-State/Out-of-State Status: </td>
+                <td><input type="radio" id="inState" name="stateGroup">In-State</td>
+                <td><input type="radio" id="outState" name="stateGroup">Out-Of-State</td>
+            </tr>
+            <tr>
+                <!-- The dorm/dining/parking options are selected from check boxes. -->
+                <td>Dorm/Dining/Parking (Select all that apply): </td>
+                <td><input type="checkbox" id="dorm">Dorm</td>
+                <td><input type="checkbox" id="dining">Dining</td>
+                <td><input type="checkbox" id="parking">Parking</td>
+
+            </tr>
+            <tr>
+                <!-- There is a button below to calculate the total cost. -->
+                <th colspan="4"><button onclick="cost()"> Calculate Cost </button><br></th>
+            </tr>
+            <tr>
+                <!-- The total cost is displayed below the button. -->
+                <th colspan="4">
+                    <p id="outputId"> </p>
+                </th>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>

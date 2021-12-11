@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Restaurant Menu</title>
+    <link rel='stylesheet' href='customer.css'>
+</head>
+
+<body>
+    <h1>Restaurant Menu</h1>
+    <form action="customer.php" method="get/post">
+        <table>
+            <tr>
+                <td>
+                    <!-- The menu contains three food items and their prices. -->
+                    <!-- The user selects the food items using check boxes.  -->
+                    <label for="burger">Burger - $10</label>
+                    <input type="checkbox" id="burger" name="burger">
+                </td>
+
+                <td>
+                    <label for="pizza">Pizza - $5</label>
+                    <input type="checkbox" id="pizza" name="pizza">
+                </td>
+
+                <td>
+                    <label for="soda">Soda - $2</label>
+                    <input type="checkbox" id="soda" name="soda">
+                </td>
+            </tr>
+
+            <!-- The site also has text boxes where the user enters the name, credit card number, and delivery address. -->
+            <tr>
+                <td>
+                    <label for="name">Name: </label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name" placeholder="Enter Name" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="card">Credit Card Number: </label>
+                </td>
+                <td>
+                    <input type="text" id="card" name="card" placeholder="Credit Card Number" minlength="16" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Delivery Address: </label>
+                </td>
+                <td>
+                    <input type="text" id="address" name="address" placeholder="Address" required><br><br>
+                </td>
+            </tr>
+        </table>
+
+        <!-- There is a submit button. -->
+        <input type="submit" value="Place Food Order">
+    </form>
+</body>
+
+</html>

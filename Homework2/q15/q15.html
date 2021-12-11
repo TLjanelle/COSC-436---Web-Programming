@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The page has an appropriate title. -->
+    <title> Compound Interest </title>
+    <link rel="stylesheet" href="q15.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function compoundInterest(p, r, n) {
+            //The inputs to the calculation are the initial amount, interest rate, and number of years.
+            var p = document.getElementById("principal").value;;
+            var r = document.getElementById("rate").value;
+            var n = document.getElementById("years").value;
+
+            // The output is the final amount.
+            // The final amount will be p(1 + r / 100)^n.
+            var output = "Final Amount: $" + Math.pow(p * (1 + (r / 100)), n);
+            document.getElementById("outputId").innerHTML = output;
+        }
+    </script>
+</head>
+
+<body>
+    <header>Compound Interest Calculator</header>
+    <main>
+        <!-- There are three text boxes for the inputs. -->
+        <table>
+            <tr>
+                <!-- These text boxes have appropriate labels on the left. -->
+                <td>Principal Amount: </td>
+                <td><input type="number" min="0.01" step="0.01" id="principal" placeholder="Principal"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>Interest Rate: </td>
+                <td><input type="number" min="0.01" step="0.01" id="rate" placeholder="Rate"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>Number of Years: </td>
+                <td><input type="number" min="0.01" step="0.01" id="years" placeholder="Years"></input>
+                </td>
+            </tr>
+            <!-- There is a button below the boxes/labels to calculate the final amount. -->
+            <tr>
+                <th colspan="2"><button onclick="compoundInterest()"> Calculate Final Amount </button><br></th>
+            </tr>
+            <!-- The final amount is displayed below the button. -->
+            <tr>
+                <th colspan="2">
+                    <p id="outputId"> </p>
+                </th>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>

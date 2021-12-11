@@ -1,0 +1,157 @@
+<!-- 20. This is related to the resume project. Add the following feature to the resume. 
+    -When the resume is clicked anywhere, a box appears at the clicked location. 
+        -The box contains a link to a company. 
+    - When the resume is clicked again anywhere, the box disappears. 
+    - When the resume is clicked again anywhere, the box appears at the clicked location containing a link to another
+company. This continues. In other words, the box alternately appears and disappears with clicks.
+The company of a click is randomly chosen from ten companies you like to work. Use
+appropriate css style for box and link. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="title" content="Computer Science Resume">
+    <meta name="author" content="Janelle Gonzalez">
+    <meta name="keywords" content="html java resume Computer Science">
+
+    <!-- Style the page -->
+    <style>
+        /* Style Header */
+        
+        header {
+            text-align: center;
+            background-color: #065c1f;
+            margin: 10px;
+            border-radius: 30px;
+            padding: 5px;
+            width: 99%;
+        }
+        /* Style Body */
+        
+        body {
+            text-align: left;
+            background-color: #00501f;
+            color: whitesmoke;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        /* Style each section */
+        
+        section {
+            background-color: grey;
+            border-radius: 30px;
+            margin: 20px;
+            padding: 5px;
+            width: 99%;
+            border-radius: 30px;
+        }
+        /* Style h2 */
+        
+        h2 {
+            text-align: center;
+            font-size: 200%;
+        }
+        /* Style h3 */
+        
+        h3 {
+            font-size: 125%;
+        }
+        /* Style p */
+        
+        p {
+            font-size: 100%;
+        }
+    </style>
+
+    <title> Janelle Gonzalez Resume </title>
+</head>
+
+<body>
+    <!-- Create header for the page -->
+    <header>
+        <h1> Janelle Grace Gonzalez </h1>
+        <p> jgonza29@emich.edu, (323) 854 - 0880, 1255 S Maple Rd, Apt 202, Ann Arbor, MI 48103
+        </p>
+    </header>
+
+    <!-- Create main part of the page -->
+    <main>
+        <!-- Give each Category it's own section-->
+        <section>
+            <h2>Education Degree</h2>
+            <p>Eastern Michigan University - Ypsilanti, MI <br> Fall 2019 - Current <br> Bachelor in Science: Computer Science - Curriculum<br> Dean’s List: Winter 2020, Fall 2020, Winter 2021
+            </p>
+
+            <p>
+                Washtenaw Community College - Ann Arbor, MI<br> Fall 2016 - Winter 2019<br> Associate in Science: General Studies Math and Science<br> Certificate in Liberal Arts: MTA<br> Dean’s list: Fall 2016, Winter 2017
+            </p>
+
+            <p>
+                Pivot Point Academy - Evanston, IL<br> February 2011 - December 2012<br> Technical Certificate: Cosmetology / Cosmetology License
+            </p>
+        </section>
+
+        <section>
+            <h2>Computer Skills</h2>
+            <p>
+                Languages: Python, Java, HTML5, CSS<br> Software: CMD, Powershell, VS Code, IntelliJ, Eclipse<br> Operating Systems: Windows, Mac OS, Linux<br> Networking Security: Nmap, Wireshark, Snort<br> Other: AWS, Flask, Bash, GREP, DevOps Repositories,
+                critical thinking, excellent attention to detail, able to grasp new concepts and master technical skills quickly
+            </p>
+        </section>
+
+        <section>
+            <h2>Courses</h2>
+            <h3>Computer Science</h3>
+            <p>
+                Software Engineering Project (COSC 481W)<br> Cyber Security (COSC 480)<br> Database Principles (COSC 471)<br> Computer Game Programming (COSC 457)<br> Computing Network Principles (COSC 439)<br> Web Programming (COSC 436)<br> Software
+                Engineering Solutions (COSC 381)<br> Programming Languages (COSC 341)<br> Computer Organization II (COSC 321)<br> Computational Discrete Structs (COSC 314)<br> Algorithms and Data Structures (COSC 311)<br> Programming in C++ (COSC 246)<br>                Internet Based Computing (COSC 231) <br> Computer Organization I (COSC 221) <br> Programming Data Structures (COSC 211/212) Applied Programming & Scripting (COSC 146)<br> Cyber Law and Compliance (LEGL 320)<br>
+            </p>
+
+            <h3>Mathematics and Sciences</h3>
+            <p>
+                Statistical Methods (STAT 360)<br> Differntial Equations (MATH 325)<br> Multivariable Calculus (MATH 223) <br> Mechanics, Sound, and Heat (PHY 224)
+                <BR> Electricity and Light (PHY 223) <br> Elementary Linear Algebra (MATH 122)<br> Calculus 2 (MATH 121)<br> Calculus 1 (MATH 120)<br>>
+            </p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <h3>You Tube Description Search</h3>
+
+            <p>
+                Developed a web application for searching YouTube Descriptions using Flask<br> Connected to Google's YouTube Data API to add features to the web application<br> Utilized Amazon Web Services (AWS) as a Virtual Machine for development and
+                deployment
+            </p>
+
+            <h3>Glucose and Insulin Monitoring in Cats (Statistical Methods Semester Project)</h3>
+            <p>
+                Examined artificially created data to predict glucose levels with CRI insulin dosage<br> Derived formulas using multiple linear regression in Microsoft Excel<br> Calculated the Root Mean Square Error (RMSE) using derived formulas to accurately
+                predict glucose levels
+            </p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <p>
+                Great Clips | Stylist | Ann Arbor, MI | Dexter, MI | Scio Township | July 2017 - Current<br> J. Grace Hair | Stylist & Makeup Artist | Los Angeles, CA | Ann Arbor, MI | June 2014 - Current<br> Salon 1800 | Junior Stylist & Assistant |
+                Chicago, IL | January 2013 - December 2013
+            </p>
+        </section>
+
+        <section>
+            <h2>Additional Information</h2>
+            <h3>Interests</h3>
+            <p>
+                Logic Puzzles, Swimming, Cycling, Longboarding, Cooking, Video Games, Animals
+            </p>
+        </section>
+    </main>
+
+    <!-- Create a footer -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
